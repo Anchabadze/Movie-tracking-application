@@ -1,1 +1,0 @@
-const numberOfMovies = prompt('How many movies have you seen so far?', '');
