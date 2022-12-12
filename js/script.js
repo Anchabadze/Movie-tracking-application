@@ -1,4 +1,15 @@
-const numberOfMovies = +prompt('How many movies have you seen so far?', ''); 
+let numberOfMovies; 
+
+function start() {
+    numberOfMovies = +prompt('How many movies have you seen so far?', ''); 
+
+    while (numberOfMovies == '' || numberOfMovies == null || isNaN(numberOfMovies)) {
+        numberOfMovies = +prompt('How many movies have you seen so far?', '');
+    }
+
+}
+
+start();
 
 const personalMovieDB = {
     count: numberOfMovies,
